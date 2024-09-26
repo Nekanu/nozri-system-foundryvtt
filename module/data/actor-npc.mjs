@@ -1,9 +1,9 @@
-import BoilerplateActorBase from './base-actor.mjs';
+import NozriActorBase from './base-actor.mjs';
 
-export default class BoilerplateNPC extends BoilerplateActorBase {
+export default class NozriNPC extends NozriActorBase {
   static LOCALIZATION_PREFIXES = [
     ...super.LOCALIZATION_PREFIXES,
-    'BOILERPLATE.Actor.NPC',
+    'NOZRI.Actor.NPC',
   ];
 
   static defineSchema() {

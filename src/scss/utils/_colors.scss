@@ -1,29 +1,29 @@
 :root {
-  --boilerplate-c-dark: #191813;
-  --boilerplate-c-faint: #c9c7b8;
-  --boilerplate-c-beige: #b5b3a4;
-  --boilerplate-c-tan: #444444;
-  --boilerplate-c-white: #ffffff;
-  --boilerplate-c-black: #000000;
-  --boilerplate-c-groove: #eeede0;
+  --nozri-c-dark: #191813;
+  --nozri-c-faint: #c9c7b8;
+  --nozri-c-beige: #b5b3a4;
+  --nozri-c-tan: #444444;
+  --nozri-c-white: #ffffff;
+  --nozri-c-black: #000000;
+  --nozri-c-groove: #eeede0;
 }
 
 .theme-dark {
-  --boilerplate-c-dark: #c9c7b8;
-  --boilerplate-c-faint: #191813;
-  --boilerplate-c-beige: #444444;
-  --boilerplate-c-tan: #b5b3a4;
-  --boilerplate-c-white: #000000;
-  --boilerplate-c-black: #ffffff;
-  --boilerplate-c-groove: #11121f;
+  --nozri-c-dark: #c9c7b8;
+  --nozri-c-faint: #191813;
+  --nozri-c-beige: #444444;
+  --nozri-c-tan: #b5b3a4;
+  --nozri-c-white: #000000;
+  --nozri-c-black: #ffffff;
+  --nozri-c-groove: #11121f;
 }
 
-$c-white: var(--boilerplate-c-white);
-$c-black: var(--boilerplate-c-black);
+$c-white: var(--nozri-c-white);
+$c-black: var(--nozri-c-black);
 
-$c-dark: var(--boilerplate-c-dark);
-$c-faint: var(--boilerplate-c-faint);
-$c-beige: var(--boilerplate-c-beige);
-$c-tan: var(--boilerplate-c-tan);
+$c-dark: var(--nozri-c-dark);
+$c-faint: var(--nozri-c-faint);
+$c-beige: var(--nozri-c-beige);
+$c-tan: var(--nozri-c-tan);
 
-$c-groove: var(--boilerplate-c-groove);
+$c-groove: var(--nozri-c-groove);

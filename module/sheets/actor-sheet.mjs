@@ -6,7 +6,7 @@ const { api, sheets } = foundry.applications;
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheetV2}
  */
-export class BoilerplateActorSheet extends api.HandlebarsApplicationMixin(
+export class NozriActorSheet extends api.HandlebarsApplicationMixin(
   sheets.ActorSheetV2
 ) {
   constructor(options = {}) {
@@ -16,7 +16,7 @@ export class BoilerplateActorSheet extends api.HandlebarsApplicationMixin(
 
   /** @override */
   static DEFAULT_OPTIONS = {
-    classes: ['boilerplate', 'actor'],
+    classes: ['nozri', 'actor'],
     position: {
       width: 600,
       height: 600,
@@ -39,26 +39,26 @@ export class BoilerplateActorSheet extends api.HandlebarsApplicationMixin(
   /** @override */
   static PARTS = {
     header: {
-      template: 'systems/boilerplate/templates/actor/header.hbs',
+      template: 'systems/nozri/templates/actor/header.hbs',
     },
     tabs: {
       // Foundry-provided generic template
       template: 'templates/generic/tab-navigation.hbs',
     },
     features: {
-      template: 'systems/boilerplate/templates/actor/features.hbs',
+      template: 'systems/nozri/templates/actor/features.hbs',
     },
     biography: {
-      template: 'systems/boilerplate/templates/actor/biography.hbs',
+      template: 'systems/nozri/templates/actor/biography.hbs',
     },
     gear: {
-      template: 'systems/boilerplate/templates/actor/gear.hbs',
+      template: 'systems/nozri/templates/actor/gear.hbs',
     },
     spells: {
-      template: 'systems/boilerplate/templates/actor/spells.hbs',
+      template: 'systems/nozri/templates/actor/spells.hbs',
     },
     effects: {
-      template: 'systems/boilerplate/templates/actor/effects.hbs',
+      template: 'systems/nozri/templates/actor/effects.hbs',
     },
   };
 
@@ -95,9 +95,12 @@ export class BoilerplateActorSheet extends api.HandlebarsApplicationMixin(
       // Add the actor's data to context.data for easier access, as well as flags.
       system: this.actor.system,
       flags: this.actor.flags,
-      // Adding a pointer to CONFIG.BOILERPLATE
-      config: CONFIG.BOILERPLATE,
+      // Adding a pointer to CONFIG.NOZRI
+      config: CONFIG.NOZRI,
       tabs: this._getTabs(options.parts),
+      // Necessary for formInput and formFields helpers
+      fields: this.document.schema.fields,
+      systemFields: this.document.system.schema.fields,
     };
 
     // Offloading context prep to a helper function
@@ -163,7 +166,7 @@ export class BoilerplateActorSheet extends api.HandlebarsApplicationMixin(
         // FontAwesome Icon, if you so choose
         icon: '',
         // Run through localization
-        label: 'BOILERPLATE.Actor.Tabs.',
+        label: 'NOZRI.Actor.Tabs.',
       };
       switch (partId) {
         case 'header':
@@ -274,7 +277,7 @@ export class BoilerplateActorSheet extends api.HandlebarsApplicationMixin(
   /**
    * Handle changing a Document's image.
    *
-   * @this BoilerplateActorSheet
+   * @this NozriActorSheet
    * @param {PointerEvent} event   The originating click event
    * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
    * @returns {Promise}
@@ -302,7 +305,7 @@ export class BoilerplateActorSheet extends api.HandlebarsApplicationMixin(
   /**
    * Renders an embedded document's sheet
    *
-   * @this BoilerplateActorSheet
+   * @this NozriActorSheet
    * @param {PointerEvent} event   The originating click event
    * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
    * @protected
@@ -315,7 +318,7 @@ export class BoilerplateActorSheet extends api.HandlebarsApplicationMixin(
   /**
    * Handles item deletion
    *
-   * @this BoilerplateActorSheet
+   * @this NozriActorSheet
    * @param {PointerEvent} event   The originating click event
    * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
    * @protected
@@ -328,7 +331,7 @@ export class BoilerplateActorSheet extends api.HandlebarsApplicationMixin(
   /**
    * Handle creating a new Owned Item or ActiveEffect for the actor using initial data defined in the HTML dataset
    *
-   * @this BoilerplateActorSheet
+   * @this NozriActorSheet
    * @param {PointerEvent} event   The originating click event
    * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
    * @private
@@ -361,7 +364,7 @@ export class BoilerplateActorSheet extends api.HandlebarsApplicationMixin(
   /**
    * Determines effect parent to pass to helper
    *
-   * @this BoilerplateActorSheet
+   * @this NozriActorSheet
    * @param {PointerEvent} event   The originating click event
    * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
    * @private
@@ -374,7 +377,7 @@ export class BoilerplateActorSheet extends api.HandlebarsApplicationMixin(
   /**
    * Handle clickable rolls.
    *
-   * @this BoilerplateActorSheet
+   * @this NozriActorSheet
    * @param {PointerEvent} event   The originating click event
    * @param {HTMLElement} target   The capturing HTML element which defined a [data-action]
    * @protected

@@ -1,6 +1,6 @@
-export default class BoilerplateActorBase extends foundry.abstract
+export default class NozriActorBase extends foundry.abstract
   .TypeDataModel {
-  static LOCALIZATION_PREFIXES = ["BOILERPLATE.Actor.base"];
+  static LOCALIZATION_PREFIXES = ["NOZRI.Actor.base"];
 
   static defineSchema() {
     const fields = foundry.data.fields;

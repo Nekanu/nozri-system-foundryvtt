@@ -1,23 +1,23 @@
-export const BOILERPLATE = {};
+export const NOZRI = {};
 
 /**
  * The set of Ability Scores used within the system.
  * @type {Object}
  */
-BOILERPLATE.abilities = {
-  str: 'BOILERPLATE.Ability.Str.long',
-  dex: 'BOILERPLATE.Ability.Dex.long',
-  con: 'BOILERPLATE.Ability.Con.long',
-  int: 'BOILERPLATE.Ability.Int.long',
-  wis: 'BOILERPLATE.Ability.Wis.long',
-  cha: 'BOILERPLATE.Ability.Cha.long',
+NOZRI.abilities = {
+  str: 'NOZRI.Ability.Str.long',
+  dex: 'NOZRI.Ability.Dex.long',
+  con: 'NOZRI.Ability.Con.long',
+  int: 'NOZRI.Ability.Int.long',
+  wis: 'NOZRI.Ability.Wis.long',
+  cha: 'NOZRI.Ability.Cha.long',
 };
 
-BOILERPLATE.abilityAbbreviations = {
-  str: 'BOILERPLATE.Ability.Str.abbr',
-  dex: 'BOILERPLATE.Ability.Dex.abbr',
-  con: 'BOILERPLATE.Ability.Con.abbr',
-  int: 'BOILERPLATE.Ability.Int.abbr',
-  wis: 'BOILERPLATE.Ability.Wis.abbr',
-  cha: 'BOILERPLATE.Ability.Cha.abbr',
+NOZRI.abilityAbbreviations = {
+  str: 'NOZRI.Ability.Str.abbr',
+  dex: 'NOZRI.Ability.Dex.abbr',
+  con: 'NOZRI.Ability.Con.abbr',
+  int: 'NOZRI.Ability.Int.abbr',
+  wis: 'NOZRI.Ability.Wis.abbr',
+  cha: 'NOZRI.Ability.Cha.abbr',
 };

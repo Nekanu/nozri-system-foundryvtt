@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 :root {
-  --boilerplate-c-dark: #191813;
-  --boilerplate-c-faint: #c9c7b8;
-  --boilerplate-c-beige: #b5b3a4;
-  --boilerplate-c-tan: #444444;
-  --boilerplate-c-white: #ffffff;
-  --boilerplate-c-black: #000000;
-  --boilerplate-c-groove: #eeede0;
+  --nozri-c-dark: #191813;
+  --nozri-c-faint: #c9c7b8;
+  --nozri-c-beige: #b5b3a4;
+  --nozri-c-tan: #444444;
+  --nozri-c-white: #ffffff;
+  --nozri-c-black: #000000;
+  --nozri-c-groove: #eeede0;
 }
 
 .theme-dark {
-  --boilerplate-c-dark: #c9c7b8;
-  --boilerplate-c-faint: #191813;
-  --boilerplate-c-beige: #444444;
-  --boilerplate-c-tan: #b5b3a4;
-  --boilerplate-c-white: #000000;
-  --boilerplate-c-black: #ffffff;
-  --boilerplate-c-groove: #11121f;
+  --nozri-c-dark: #c9c7b8;
+  --nozri-c-faint: #191813;
+  --nozri-c-beige: #444444;
+  --nozri-c-tan: #b5b3a4;
+  --nozri-c-white: #000000;
+  --nozri-c-black: #ffffff;
+  --nozri-c-groove: #11121f;
 }
 
 /* Global styles */
@@ -25,7 +25,7 @@
 }
 
 .rollable:hover, .rollable:focus {
-  color: var(--boilerplate-c-black);
+  color: var(--nozri-c-black);
   text-shadow: 0 0 10px red;
   cursor: pointer;
 }
@@ -223,11 +223,11 @@
   text-align: center;
 }
 
-/* Styles limited to boilerplate sheets */
-.boilerplate .item-form {
+/* Styles limited to nozri sheets */
+.nozri .item-form {
   font-family: "Roboto", sans-serif;
 }
-.boilerplate .sheet-header {
+.nozri .sheet-header {
   flex: 0 auto;
   overflow: hidden;
   display: flex;
@@ -236,77 +236,77 @@
   justify-content: flex-start;
   margin-bottom: 10px;
 }
-.boilerplate .sheet-header .profile-img {
+.nozri .sheet-header .profile-img {
   flex: 0 0 100px;
   height: 100px;
   margin-right: 10px;
 }
-.boilerplate .sheet-header .header-fields {
+.nozri .sheet-header .header-fields {
   flex: 1;
 }
-.boilerplate .sheet-tabs {
+.nozri .sheet-tabs {
   flex: 0;
 }
-.boilerplate .sheet-body,
-.boilerplate .sheet-body .tab,
-.boilerplate .sheet-body .tab .editor {
+.nozri .sheet-body,
+.nozri .sheet-body .tab,
+.nozri .sheet-body .tab .editor {
   height: 100%;
 }
-.boilerplate .tab.biography {
+.nozri .tab.biography {
   flex: 1;
 }
-.boilerplate .tab.biography .editor {
+.nozri .tab.biography .editor {
   height: 100%;
 }
-.boilerplate .tox .tox-editor-container {
-  background: var(--boilerplate-c-white);
+.nozri .tox .tox-editor-container {
+  background: var(--nozri-c-white);
 }
-.boilerplate .tox .tox-edit-area {
+.nozri .tox .tox-edit-area {
   padding: 0 8px;
 }
-.boilerplate .resource-label {
+.nozri .resource-label {
   font-weight: bold;
 }
-.boilerplate .ability {
+.nozri .ability {
   margin-bottom: 2px;
 }
-.boilerplate .ability-score,
-.boilerplate .ability-mod {
+.nozri .ability-score,
+.nozri .ability-mod {
   flex: 0 0 44px;
 }
-.boilerplate .items-header {
+.nozri .items-header {
   height: 28px;
   margin: 2px 0;
   padding: 0;
   align-items: center;
   background: rgba(0, 0, 0, 0.05);
-  border: 2px groove var(--boilerplate-c-groove);
+  border: 2px groove var(--nozri-c-groove);
   font-weight: bold;
 }
-.boilerplate .items-header > * {
+.nozri .items-header > * {
   font-size: 14px;
   text-align: center;
 }
-.boilerplate .items-header .item-name {
+.nozri .items-header .item-name {
   font-weight: bold;
   padding-left: 5px;
   text-align: left;
   display: flex;
 }
-.boilerplate .items-list {
+.nozri .items-list {
   list-style: none;
   margin: 0;
   padding: 0;
   overflow-y: auto;
   scrollbar-width: thin;
-  color: var(--boilerplate-c-tan);
+  color: var(--nozri-c-tan);
 }
-.boilerplate .items-list .item-list {
+.nozri .items-list .item-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.boilerplate .items-list .item-name {
+.nozri .items-list .item-name {
   flex: 2;
   margin: 0;
   overflow: hidden;
@@ -315,99 +315,99 @@
   align-items: center;
   display: flex;
 }
-.boilerplate .items-list .item-name h3, .boilerplate .items-list .item-name h4 {
+.nozri .items-list .item-name h3, .nozri .items-list .item-name h4 {
   margin: 0;
   white-space: nowrap;
   overflow-x: hidden;
 }
-.boilerplate .items-list .item-controls {
+.nozri .items-list .item-controls {
   display: flex;
   flex: 0 0 100px;
   justify-content: flex-end;
 }
-.boilerplate .items-list .item-controls a {
+.nozri .items-list .item-controls a {
   font-size: 12px;
   text-align: center;
   margin: 0 6px;
 }
-.boilerplate .items-list .item {
+.nozri .items-list .item {
   align-items: center;
   padding: 0 2px;
-  border-bottom: 1px solid var(--boilerplate-c-faint);
+  border-bottom: 1px solid var(--nozri-c-faint);
 }
-.boilerplate .items-list .item:last-child {
+.nozri .items-list .item:last-child {
   border-bottom: none;
 }
-.boilerplate .items-list .item .item-name {
-  color: var(--boilerplate-c-dark);
+.nozri .items-list .item .item-name {
+  color: var(--nozri-c-dark);
 }
-.boilerplate .items-list .item .item-name .item-image {
+.nozri .items-list .item .item-name .item-image {
   flex: 0 0 30px;
   height: 30px;
   background-size: 30px;
   border: none;
   margin-right: 5px;
 }
-.boilerplate .items-list .item-prop {
+.nozri .items-list .item-prop {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
-.boilerplate .items-list .items-header {
+.nozri .items-list .items-header {
   height: 28px;
   margin: 2px 0;
   padding: 0;
   align-items: center;
   background: rgba(0, 0, 0, 0.05);
-  border: 2px groove var(--boilerplate-c-groove);
+  border: 2px groove var(--nozri-c-groove);
   font-weight: bold;
 }
-.boilerplate .items-list .items-header > * {
+.nozri .items-list .items-header > * {
   font-size: 12px;
   text-align: center;
 }
-.boilerplate .items-list .items-header .item-name {
+.nozri .items-list .items-header .item-name {
   padding-left: 5px;
   text-align: left;
 }
-.boilerplate .item-formula {
+.nozri .item-formula {
   flex: 0 0 200px;
   padding: 0 8px;
 }
-.boilerplate .effects-header {
+.nozri .effects-header {
   height: 28px;
   margin: 2px 0;
   padding: 0;
   align-items: center;
   background: rgba(0, 0, 0, 0.05);
-  border: 2px groove var(--boilerplate-c-groove);
+  border: 2px groove var(--nozri-c-groove);
   font-weight: bold;
 }
-.boilerplate .effects-header > * {
+.nozri .effects-header > * {
   font-size: 14px;
   text-align: center;
 }
-.boilerplate .effects-header .effect-name {
+.nozri .effects-header .effect-name {
   font-weight: bold;
   padding-left: 5px;
   text-align: left;
   display: flex;
 }
-.boilerplate .effects-list {
+.nozri .effects-list {
   list-style: none;
   margin: 0;
   padding: 0;
   overflow-y: auto;
   scrollbar-width: thin;
-  color: var(--boilerplate-c-tan);
+  color: var(--nozri-c-tan);
 }
-.boilerplate .effects-list .effect-list {
+.nozri .effects-list .effect-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.boilerplate .effects-list .effect-name {
+.nozri .effects-list .effect-name {
   flex: 2;
   margin: 0;
   overflow: hidden;
@@ -416,74 +416,74 @@
   align-items: center;
   display: flex;
 }
-.boilerplate .effects-list .effect-name h3, .boilerplate .effects-list .effect-name h4 {
+.nozri .effects-list .effect-name h3, .nozri .effects-list .effect-name h4 {
   margin: 0;
   white-space: nowrap;
   overflow-x: hidden;
 }
-.boilerplate .effects-list .effect-controls {
+.nozri .effects-list .effect-controls {
   display: flex;
   flex: 0 0 100px;
   justify-content: flex-end;
 }
-.boilerplate .effects-list .effect-controls a {
+.nozri .effects-list .effect-controls a {
   font-size: 12px;
   text-align: center;
   margin: 0 6px;
 }
-.boilerplate .effects-list .effect {
+.nozri .effects-list .effect {
   align-items: center;
   padding: 0 2px;
-  border-bottom: 1px solid var(--boilerplate-c-faint);
+  border-bottom: 1px solid var(--nozri-c-faint);
 }
-.boilerplate .effects-list .effect:last-child {
+.nozri .effects-list .effect:last-child {
   border-bottom: none;
 }
-.boilerplate .effects-list .effect .effect-name {
-  color: var(--boilerplate-c-dark);
+.nozri .effects-list .effect .effect-name {
+  color: var(--nozri-c-dark);
 }
-.boilerplate .effects-list .effect .effect-name .effect-image {
+.nozri .effects-list .effect .effect-name .effect-image {
   flex: 0 0 30px;
   height: 30px;
   background-size: 30px;
   border: none;
   margin-right: 5px;
 }
-.boilerplate .effects-list .effect-prop {
+.nozri .effects-list .effect-prop {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
-.boilerplate .effects-list .effects-header {
+.nozri .effects-list .effects-header {
   height: 28px;
   margin: 2px 0;
   padding: 0;
   align-items: center;
   background: rgba(0, 0, 0, 0.05);
-  border: 2px groove var(--boilerplate-c-groove);
+  border: 2px groove var(--nozri-c-groove);
   font-weight: bold;
 }
-.boilerplate .effects-list .effects-header > * {
+.nozri .effects-list .effects-header > * {
   font-size: 12px;
   text-align: center;
 }
-.boilerplate .effects-list .effects-header .effect-name {
+.nozri .effects-list .effects-header .effect-name {
   padding-left: 5px;
   text-align: left;
 }
-.boilerplate .effect-formula {
+.nozri .effect-formula {
   flex: 0 0 200px;
   padding: 0 8px;
 }
-.boilerplate .effects .item .effect-source,
-.boilerplate .effects .item .effect-duration,
-.boilerplate .effects .item .effect-controls {
+.nozri .effects .item .effect-source,
+.nozri .effects .item .effect-duration,
+.nozri .effects .item .effect-controls {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
-.boilerplate .effects .item .effect-controls {
+.nozri .effects .item .effect-controls {
   border: none;
 }

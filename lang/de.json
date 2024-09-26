@@ -1,16 +1,16 @@
 {
-  "BOILERPLATE": {
+  "NOZRI": {
     "Ability": {
       "Str": { "long": "Stärke", "abbr": "str" },
-      "Con": { "long": "Ausdauer", "abbr": "con" },
-      "Dex": { "long": "Gewandheit", "abbr": "dex" },
-      "Int": { "long": "Intelligenz", "abbr": "int" },
-      "Wis": { "long": "Weisheit", "abbr": "wis" },
+      "Con": { "long": "Constitution", "abbr": "con" },
+      "Dex": { "long": "Dexterity", "abbr": "dex" },
+      "Int": { "long": "Intelligence", "abbr": "int" },
+      "Wis": { "long": "Wisdom", "abbr": "wis" },
       "Cha": { "long": "Charisma", "abbr": "cha" }
     },
     "SheetLabels": {
-      "Actor": "Boilerplate Actor Sheet",
-      "Item": "Boilerplate Item Sheet"
+      "Actor": "Nozri Actor Sheet",
+      "Item": "Nozri Item Sheet"
     },
     "Actor": {
       "Tabs": {
@@ -22,14 +22,14 @@
       },
       "base": {
         "FIELDS": {
-          "biography": {"label": "Biografie"},
+          "biography": {"label": "Biography"},
           "health": {
-            "value": {"label": "Gesundheit"},
-            "max": {"label": "Maximale Gesundheit"}
+            "value": {"label": "Health"},
+            "max": {"label": "Maximum Health"}
           },
           "power": {
-            "value": {"label": "Kraft"},
-            "max": {"label": "Maximale Kraft"}
+            "value": {"label": "Power"},
+            "max": {"label": "Maximum Power"}
           }
         }
       },
@@ -47,9 +47,9 @@
     },
     "Item": {
       "Tabs": {
-        "Attributes": "Eigenschaften",
-        "Description": "Beschreibung",
-        "Effects": "Effekte"
+        "Attributes": "Attributes",
+        "Description": "Description",
+        "Effects": "Effects"
       },
       "Gear": {
         "FIELDS": {

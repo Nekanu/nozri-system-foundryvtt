@@ -1,9 +1,9 @@
-import BoilerplateItemBase from './base-item.mjs';
+import NozriItemBase from './base-item.mjs';
 
-export default class BoilerplateGear extends BoilerplateItemBase {
+export default class NozriGear extends NozriItemBase {
   static LOCALIZATION_PREFIXES = [
-    'BOILERPLATE.Item.base',
-    'BOILERPLATE.Item.Gear',
+    'NOZRI.Item.base',
+    'NOZRI.Item.Gear',
   ];
 
   static defineSchema() {

@@ -1,11 +1,11 @@
 // Import document classes.
-import { BoilerplateActor } from './documents/actor.mjs';
-import { BoilerplateItem } from './documents/item.mjs';
+import { NozriActor } from './documents/actor.mjs';
+import { NozriItem } from './documents/item.mjs';
 // Import sheet classes.
-import { BoilerplateActorSheet } from './sheets/actor-sheet.mjs';
-import { BoilerplateItemSheet } from './sheets/item-sheet.mjs';
+import { NozriActorSheet } from './sheets/actor-sheet.mjs';
+import { NozriItemSheet } from './sheets/item-sheet.mjs';
 // Import helper/utility classes and constants.
-import { BOILERPLATE } from './helpers/config.mjs';
+import { NOZRI } from './helpers/config.mjs';
 // Import DataModel classes
 import * as models from './data/_module.mjs';
 
@@ -15,14 +15,14 @@ import * as models from './data/_module.mjs';
 
 // Add key classes to the global scope so they can be more easily used
 // by downstream developers
-globalThis.boilerplate = {
+globalThis.nozri = {
   documents: {
-    BoilerplateActor,
-    BoilerplateItem,
+    NozriActor,
+    NozriItem,
   },
   applications: {
-    BoilerplateActorSheet,
-    BoilerplateItemSheet,
+    NozriActorSheet,
+    NozriItemSheet,
   },
   utils: {
     rollItemMacro,
@@ -32,7 +32,7 @@ globalThis.boilerplate = {
 
 Hooks.once('init', function () {
   // Add custom constants for configuration.
-  CONFIG.BOILERPLATE = BOILERPLATE;
+  CONFIG.NOZRI = NOZRI;
 
   /**
    * Set an initiative formula for the system
@@ -44,20 +44,20 @@ Hooks.once('init', function () {
   };
 
   // Define custom Document and DataModel classes
-  CONFIG.Actor.documentClass = BoilerplateActor;
+  CONFIG.Actor.documentClass = NozriActor;
 
   // Note that you don't need to declare a DataModel
   // for the base actor/item classes - they are included
   // with the Character/NPC as part of super.defineSchema()
   CONFIG.Actor.dataModels = {
-    character: models.BoilerplateCharacter,
-    npc: models.BoilerplateNPC,
+    character: models.NozriCharacter,
+    npc: models.NozriNPC,
   };
-  CONFIG.Item.documentClass = BoilerplateItem;
+  CONFIG.Item.documentClass = NozriItem;
   CONFIG.Item.dataModels = {
-    gear: models.BoilerplateGear,
-    feature: models.BoilerplateFeature,
-    spell: models.BoilerplateSpell,
+    gear: models.NozriGear,
+    feature: models.NozriFeature,
+    spell: models.NozriSpell,
   };
 
   // Active Effects are never copied to the Actor,
@@ -67,14 +67,14 @@ Hooks.once('init', function () {
 
   // Register sheet application classes
   Actors.unregisterSheet('core', ActorSheet);
-  Actors.registerSheet('boilerplate', BoilerplateActorSheet, {
+  Actors.registerSheet('nozri', NozriActorSheet, {
     makeDefault: true,
-    label: 'BOILERPLATE.SheetLabels.Actor',
+    label: 'NOZRI.SheetLabels.Actor',
   });
   Items.unregisterSheet('core', ItemSheet);
-  Items.registerSheet('boilerplate', BoilerplateItemSheet, {
+  Items.registerSheet('nozri', NozriItemSheet, {
     makeDefault: true,
-    label: 'BOILERPLATE.SheetLabels.Item',
+    label: 'NOZRI.SheetLabels.Item',
   });
 });
 
@@ -119,7 +119,7 @@ async function createDocMacro(data, slot) {
   const item = await Item.fromDropData(data);
 
   // Create the macro command using the uuid.
-  const command = `game.boilerplate.rollItemMacro("${data.uuid}");`;
+  const command = `game.nozri.rollItemMacro("${data.uuid}");`;
   let macro = game.macros.find(
     (m) => m.name === item.name && m.command === command
   );
@@ -129,7 +129,7 @@ async function createDocMacro(data, slot) {
       type: 'script',
       img: item.img,
       command: command,
-      flags: { 'boilerplate.itemMacro': true },
+      flags: { 'nozri.itemMacro': true },
     });
   }
   game.user.assignHotbarMacro(macro, slot);

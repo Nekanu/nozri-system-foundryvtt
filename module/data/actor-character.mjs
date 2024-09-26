@@ -1,9 +1,9 @@
-import BoilerplateActorBase from './base-actor.mjs';
+import NozriActorBase from './base-actor.mjs';
 
-export default class BoilerplateCharacter extends BoilerplateActorBase {
+export default class NozriCharacter extends NozriActorBase {
   static LOCALIZATION_PREFIXES = [
     ...super.LOCALIZATION_PREFIXES,
-    'BOILERPLATE.Actor.Character',
+    'NOZRI.Actor.Character',
   ];
 
   static defineSchema() {
@@ -19,7 +19,7 @@ export default class BoilerplateCharacter extends BoilerplateActorBase {
 
     // Iterate over ability names and create a new SchemaField for each.
     schema.abilities = new fields.SchemaField(
-      Object.keys(CONFIG.BOILERPLATE.abilities).reduce((obj, ability) => {
+      Object.keys(CONFIG.NOZRI.abilities).reduce((obj, ability) => {
         obj[ability] = new fields.SchemaField({
           value: new fields.NumberField({
             ...requiredInteger,
@@ -43,7 +43,7 @@ export default class BoilerplateCharacter extends BoilerplateActorBase {
       );
       // Handle ability label localization.
       this.abilities[key].label =
-        game.i18n.localize(CONFIG.BOILERPLATE.abilities[key]) ?? key;
+        game.i18n.localize(CONFIG.NOZRI.abilities[key]) ?? key;
     }
   }
 
