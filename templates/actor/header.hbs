@@ -48,27 +48,6 @@
       </div>
 
       <div class='resource flex-group-center'>
-        <label for='system.power.value' class='resource-label'>
-          {{localize 'NOZRI.Actor.base.FIELDS.power.value.label'}}
-        </label>
-        <div class='resource-content flexrow flex-center flex-between'>
-          <input
-            type='text'
-            name='system.power.value'
-            value='{{system.power.value}}'
-            data-dtype='Number'
-          />
-          <span> / </span>
-          <input
-            type='text'
-            name='system.power.max'
-            value='{{system.power.max}}'
-            data-dtype='Number'
-          />
-        </div>
-      </div>
-
-      <div class='resource flex-group-center'>
         {{#if (eq actor.type 'character')}}
           <label class='resource-label'>
             {{localize 'NOZRI.Actor.Character.FIELDS.attributes.level.value.label'}}

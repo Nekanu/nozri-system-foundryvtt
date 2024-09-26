@@ -1,82 +1,99 @@
 {
-  "id": "nozri",
-  "title": "Nozri",
-  "description": "The Nozri system for FoundryVTT!",
-  "authors": [
-    {
-      "name": "Nekanu"
-    }
-  ],
-  "documentTypes": {
-    "Actor": {
-        "character": {
-            "htmlFields": ["biography"]
+    "id": "nozri",
+    "title": "Nozri",
+    "description": "The Nozri system for FoundryVTT!",
+    "authors": [
+        {
+            "name": "Nekanu"
+        }
+    ],
+    "documentTypes": {
+        "Actor": {
+            "character": {
+                "htmlFields": [
+                    "biography"
+                ]
+            },
+            "npc": {
+                "htmlFields": [
+                    "biography"
+                ]
+            }
         },
-        "npc": {
-            "htmlFields": ["biography"]
+        "Item": {
+            "feature": {
+                "htmlFields": [
+                    "description"
+                ]
+            },
+            "gear": {
+                "htmlFields": [
+                    "description"
+                ]
+            },
+            "spell": {
+                "htmlFields": [
+                    "description"
+                ]
+            }
         }
     },
-    "Item": {
-        "feature": {
-            "htmlFields": ["description"]
-        },
-        "gear": {
-            "htmlFields": ["description"]
-        },
-        "spell": {
-            "htmlFields": ["description"]
+    "flags": {
+        "hotReload": {
+            "extensions": [
+                "css",
+                "html",
+                "hbs",
+                "json"
+            ],
+            "paths": [
+                "css",
+                "lang",
+                "templates"
+            ]
         }
-    }
-  },
-  "flags": {
-    "hotReload": {
-      "extensions": ["css", "html", "hbs", "json"],
-      "paths": ["css", "lang", "templates"]
-    }
-  },
-  "url": "https://github.com/Nekanu/nozri-system-foundryvtt",
-  "license": "LICENSE",
-  "readme": "README.md",
-  "bugs": "https://github.com/Nekanu/nozri-system-foundryvtt/issues",
-  "changelog": "CHANGELOG.md",
-  "media": [
-    {
-      "type": "setup",
-      "url": "systems/nozri/assets/anvil-impact.png",
-      "thumbnail": "systems/nozri/assets/anvil-impact.png"
-    }
-  ],
-  "version": "0.1.0",
-  "compatibility": {
-    "minimum": "12.328",
-    "verified": "12.328"
-  },
-  "esmodules": ["module/nozri.mjs"],
-  "styles": ["css/nozri.css"],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
     },
-    {
-      "lang": "de",
-      "name": "Deutsch",
-      "path": "lang/de.json"
-    }
-  ],
-  "packs": [],
-  "packFolders": [],
-  "socket": false,
-  "manifest": "https://raw.githubusercontent.com/Nekanu/nozri-system-foundryvtt/refs/heads/develop/system.json",
-  "download": "https://github.com/Nekanu/nozri-system-foundryvtt/archive/refs/heads/develop.zip",
-  "background": "systems/nozri/assets/anvil-impact.png",
-  "grid": {
-    "type": 1,
-    "distance": 5,
-    "units": "ft",
-    "diagonals": 0
-  },
-  "primaryTokenAttribute": "health",
-  "secondaryTokenAttribute": "power"
+    "url": "https://github.com/Nekanu/nozri-system-foundryvtt",
+    "license": "LICENSE",
+    "readme": "README.md",
+    "bugs": "https://github.com/Nekanu/nozri-system-foundryvtt/issues",
+    "changelog": "CHANGELOG.md",
+    "media": [
+        {
+            "type": "setup",
+            "url": "systems/nozri/assets/anvil-impact.png",
+            "thumbnail": "systems/nozri/assets/anvil-impact.png"
+        }
+    ],
+    "version": "0.1.0",
+    "compatibility": {
+        "minimum": "12.328",
+        "verified": "12.328"
+    },
+    "esmodules": [
+        "module/nozri.mjs"
+    ],
+    "styles": [
+        "css/nozri.css"
+    ],
+    "languages": [
+        {
+            "lang": "de",
+            "name": "Deutsch",
+            "path": "lang/de.json"
+        }
+    ],
+    "packs": [],
+    "packFolders": [],
+    "socket": false,
+    "manifest": "https://raw.githubusercontent.com/Nekanu/nozri-system-foundryvtt/refs/heads/develop/system.json",
+    "download": "https://github.com/Nekanu/nozri-system-foundryvtt/archive/refs/heads/develop.zip",
+    "background": "systems/nozri/assets/anvil-impact.png",
+    "grid": {
+        "type": 1,
+        "distance": 5,
+        "units": "ft",
+        "diagonals": 0
+    },
+    "primaryTokenAttribute": "health"
 }
