@@ -1,0 +1,61 @@
+{
+  "id": "nozri",
+  "title": "The World of Nozri",
+  "description": "",
+  "authors": [
+    {
+      "name": "Nekanu"
+    }
+  ],
+  "flags": {
+    "hotReload": {
+      "extensions": ["css", "html", "hbs", "json"],
+      "paths": ["css", "lang", "templates"]
+    }
+  },
+  "url": "https://github.com/Nekanu/nozri-system-foundryvtt",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "bugs": "https://github.com/Nekanu/nozri-system-foundryvtt/issues/new",
+  "changelog": "CHANGELOG.md",
+  "media": [
+    {
+      "type": "setup",
+      "url": "systems/boilerplate/assets/anvil-impact.png",
+      "thumbnail": "systems/boilerplate/assets/anvil-impact.png"
+    }
+  ],
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "12.328",
+    "verified": "12.330"
+  },
+  "esmodules": ["module/boilerplate.mjs"],
+  "styles": ["css/boilerplate.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json"
+    }
+  ],
+  "packs": [],
+  "packFolders": [],
+  "socket": false,
+  "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
+  "download": "This must link to a .zip file of the current version",
+  "background": "systems/boilerplate/assets/anvil-impact.png",
+  "grid": {
+    "type": 1,
+    "distance": 5,
+    "units": "ft",
+    "diagonals": 0
+  },
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power"
+}

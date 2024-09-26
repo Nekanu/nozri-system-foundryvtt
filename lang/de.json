@@ -1,0 +1,91 @@
+{
+  "BOILERPLATE": {
+    "Ability": {
+      "Str": { "long": "Stärke", "abbr": "str" },
+      "Con": { "long": "Ausdauer", "abbr": "con" },
+      "Dex": { "long": "Gewandheit", "abbr": "dex" },
+      "Int": { "long": "Intelligenz", "abbr": "int" },
+      "Wis": { "long": "Weisheit", "abbr": "wis" },
+      "Cha": { "long": "Charisma", "abbr": "cha" }
+    },
+    "SheetLabels": {
+      "Actor": "Boilerplate Actor Sheet",
+      "Item": "Boilerplate Item Sheet"
+    },
+    "Actor": {
+      "Tabs": {
+        "Biography": "Biography",
+        "Features": "Features",
+        "Gear": "Gear",
+        "Spells": "Spells",
+        "Effects": "Effects"
+      },
+      "base": {
+        "FIELDS": {
+          "biography": {"label": "Biografie"},
+          "health": {
+            "value": {"label": "Gesundheit"},
+            "max": {"label": "Maximale Gesundheit"}
+          },
+          "power": {
+            "value": {"label": "Kraft"},
+            "max": {"label": "Maximale Kraft"}
+          }
+        }
+      },
+      "Character": {
+        "FIELDS": {
+          "attributes.level.value": {"label": "Level"}
+        }
+      },
+      "NPC": {
+        "FIELDS": {
+          "cr": {"label": "CR"}
+        },
+        "xp": {"label": "XP"}
+      }
+    },
+    "Item": {
+      "Tabs": {
+        "Attributes": "Eigenschaften",
+        "Description": "Beschreibung",
+        "Effects": "Effekte"
+      },
+      "Gear": {
+        "FIELDS": {
+          "rollFormula": {"label": "Roll Formula"},
+          "numDice": {"label": "Number of Dice"},
+          "dieSize": {"label": "Die Size"},
+          "rollMod": {"label": "Roll Modifier"},
+          "quantity": {"label": "Quantity"},
+          "weight": {"label": "Weight"}
+        }
+      },
+      "Spell": {
+        "FIELDS": {
+          "level": {"label": "Spell Level"}
+        },
+        "SpellLVL": "Level {level} Spells",
+        "AddLVL": "Add LVL {level}"
+      }
+    },
+    "Effect": {
+      "Source": "Source",
+      "Toggle": "Toggle Effect",
+      "Temporary": "Temporary Effects",
+      "Passive": "Passive Effects",
+      "Inactive": "Inactive Effects"
+    }
+  },
+  "TYPES": {
+    "Actor": {
+      "character": "Character",
+      "npc": "NPC"
+    },
+    "Item": {
+      "gear": "Gear",
+      "feature": "Feature",
+      "spell": "Spell"
+    }
+  }
+}
