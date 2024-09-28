@@ -1,4 +1,4 @@
-import {NozriActorCreature} from "../_module.mjs";
+import NozriActorCreature from "./templates/creature.mjs";
 
 const {SchemaField, NumberField} = foundry.data.fields;
 
