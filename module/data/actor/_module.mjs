@@ -6,6 +6,9 @@ export {
     NozriNPC,
 };
 
+// Export abstracts
+export {default as NozriActorCreature} from "./templates/creature.mjs";
+
 export const config = {
     character: NozriCharacter,
     npc: NozriNPC,

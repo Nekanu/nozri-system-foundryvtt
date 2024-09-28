@@ -1,4 +1,4 @@
-import NozriItemBase from './base.mjs';
+import NozriItemBase from './templates/base.mjs';
 
 export default class NozriFeature extends NozriItemBase {
     static LOCALIZATION_PREFIXES = [

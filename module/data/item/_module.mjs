@@ -8,6 +8,9 @@ export {
     NozriSpell
 };
 
+// Export abstracts / templates
+export {default as NozriItemBase} from "./templates/base.mjs";
+
 export const config = {
     feature: NozriFeature,
     gear: NozriGear,
