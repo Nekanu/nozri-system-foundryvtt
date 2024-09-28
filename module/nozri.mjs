@@ -39,7 +39,7 @@ Hooks.once('init', function () {
      * @type {String}
      */
     CONFIG.Combat.initiative = {
-        formula: '1d20 + @abilities.dex.mod',
+        formula: '1d20 + @abilities.fight.initiative',
         decimals: 2,
     };
 
@@ -49,16 +49,9 @@ Hooks.once('init', function () {
     // Note that you don't need to declare a DataModel
     // for the base actor/item classes - they are included
     // with the Character/NPC as part of super.defineSchema()
-    CONFIG.Actor.dataModels = {
-        character: models.NozriCharacter,
-        npc: models.NozriNPC,
-    };
+    CONFIG.Actor.dataModels = models.actor.config;
     CONFIG.Item.documentClass = NozriItem;
-    CONFIG.Item.dataModels = {
-        gear: models.NozriGear,
-        feature: models.NozriFeature,
-        spell: models.NozriSpell,
-    };
+    CONFIG.Item.dataModels = models.items.config;
 
     // Active Effects are never copied to the Actor,
     // but will still apply to the Actor from within the Item

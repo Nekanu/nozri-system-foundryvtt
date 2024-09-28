@@ -1,5 +1,7 @@
 import {NozriActorCreature} from "../_module.mjs";
 
+const {SchemaField, NumberField} = foundry.data.fields;
+
 export default class NozriCharacter extends NozriActorCreature {
     static LOCALIZATION_PREFIXES = [
         ...super.LOCALIZATION_PREFIXES,
@@ -7,13 +9,12 @@ export default class NozriCharacter extends NozriActorCreature {
     ];
 
     static defineSchema() {
-        const fields = foundry.data.fields;
         const requiredInteger = {required: true, nullable: false, integer: true};
         const schema = super.defineSchema();
 
-        schema.attributes = new fields.SchemaField({
-            level: new fields.SchemaField({
-                value: new fields.NumberField({...requiredInteger, initial: 1}),
+        schema.attributes = new SchemaField({
+            level: new SchemaField({
+                value: new NumberField({...requiredInteger, initial: 1}),
             }),
         });
 
@@ -24,9 +25,7 @@ export default class NozriCharacter extends NozriActorCreature {
         // Loop through ability scores, and add their modifiers to our sheet output.
         for (const key in this.abilities) {
             // Calculate the modifier using d20 rules.
-            this.abilities[key].mod = Math.floor(
-                (this.abilities[key].value - 10) / 2
-            );
+            this.abilities[key].mod = this.abilities[key].value;
             // Handle ability label localization.
             this.abilities[key].label =
                 game.i18n.localize(CONFIG.NOZRI.abilities[key]) ?? key;

@@ -65,10 +65,10 @@
             "thumbnail": "systems/nozri/assets/anvil-impact.png"
         }
     ],
-    "version": "0.1.0",
+    "version": "0.1.1",
     "compatibility": {
-        "minimum": "12.328",
-        "verified": "12.328"
+        "minimum": "11",
+        "verified": "12.331"
     },
     "esmodules": [
         "module/nozri.mjs"
@@ -91,8 +91,8 @@
     "background": "systems/nozri/assets/anvil-impact.png",
     "grid": {
         "type": 1,
-        "distance": 5,
-        "units": "ft",
+        "distance": 1,
+        "units": "m",
         "diagonals": 0
     },
     "primaryTokenAttribute": "health"
