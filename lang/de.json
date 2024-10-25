@@ -18,29 +18,31 @@
                 "Frost": "Frost",
                 "Earth": "Erde",
                 "Air": "Luft",
+                "Electricity": "Elektro",
                 "Light": "Licht",
-                "Electricity": "Blitz",
+                "Shadow": "Schatten",
                 "Poison": "Gift",
                 "Bleed": "Blutung"
             },
             "Dialogue": {
                 "Persuasion": "Überreden",
                 "Intimidation": "Einschüchtern",
-                "Performance": "Schauspiel",
+                "Acting": "Schauspiel",
                 "Deception": "Täuschung",
-                "Charisma": "Charisma"
+                "Charisma": "Charisma",
+                "Empathy": "Empathie"
             },
             "Environmental": {
                 "Strength": "Stärke",
-                "Intelligence": "Intelligenz",
                 "Dexterity": "Geschicklichkeit",
+                "Intelligence": "Intelligenz",
                 "Faith": "Glaube",
                 "Perception": "Wahrnehmung",
                 "Investigation": "Nachforschung",
-                "Carefulness": "Behutsamkeit",
+                "Knowledge": "Wissen",
+                "Willpower": "Willenskraft",
                 "Stealth": "Heimlichkeit",
-                "Reaction": "Reaktion",
-                "Willpower": "Willenskraft"
+                "Reaction": "Reaktion"
             }
         },
         "SheetLabels": {

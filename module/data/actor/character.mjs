@@ -2,20 +2,23 @@ import NozriActorCreature from "./templates/creature.mjs";
 
 const {SchemaField, NumberField} = foundry.data.fields;
 
+/**
+ * System Data Definition
+ */
 export default class NozriCharacter extends NozriActorCreature {
     static LOCALIZATION_PREFIXES = [
         ...super.LOCALIZATION_PREFIXES,
         'NOZRI.Actor.Character',
     ];
 
+    static _systemType = "npc";
+
     static defineSchema() {
         const requiredInteger = {required: true, nullable: false, integer: true};
         const schema = super.defineSchema();
 
         schema.attributes = new SchemaField({
-            level: new SchemaField({
-                value: new NumberField({...requiredInteger, initial: 1}),
-            }),
+            level: new NumberField({...requiredInteger, initial: 1, min: 1, max: 5, label: "NOZRI.Level"}),
         });
 
         return schema;
