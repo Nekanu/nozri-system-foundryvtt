@@ -37,9 +37,9 @@ export class NozriActorSheet extends api.HandlebarsApplicationMixin(sheets.Actor
             // Foundry-provided generic template
             template: 'templates/generic/tab-navigation.hbs',
         },
-        features: {
-            template: 'systems/nozri/templates/actor/features.hbs',
-        },
+        // features: {
+        //     template: 'systems/nozri/templates/actor/features.hbs',
+        // },
         biography: {
             template: 'systems/nozri/templates/actor/biography.hbs',
         },

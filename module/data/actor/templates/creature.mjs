@@ -65,7 +65,7 @@ export default class NozriActorCreature extends foundry.abstract.TypeDataModel {
 
         schema.biography = new HTMLField();
 
-        schema.gold = new NumberField({...requiredInteger, initial: null, min: 0, label: "NOZRI.Gold"});
+        schema.gold = new NumberField({...requiredInteger, initial: 0, min: 0, label: "NOZRI.Gold"});
 
         // Iterate over ability names and create a new SchemaField for each.
         schema.abilities = new SchemaField({
